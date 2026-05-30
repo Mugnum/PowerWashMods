@@ -6,7 +6,8 @@
 ## Installation
 - Download [MelonLoader installer](https://melonloader.co/download.html).
 - Install MelonLoader for PowerWash Simulator.
-- Download mod from [releases](https://github.com/Mugnum/PowerWashMods/releases) and extract it to base game folder.
+- Download mods from [releases](https://github.com/Mugnum/PowerWashMods/releases).
+- Extract mods' archives to base game folder.
 - Disable MelonLoader console:
   - Either add `--melonloader.hideconsole` to launch options.
   - Or edit `\PowerWash Simulator\UserData\Loader.cfg` and set `hide_console = true`.
