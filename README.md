@@ -1,7 +1,7 @@
 ## List of PowerWash Simulator mods
 - **Universal movement speed**  
     Disables movement speed reduction when looking down. The minimum speed can be customized in config.  
-    Can be toggled with `~` shortcut, which can be customized in config.
+    Can be toggled with `~` shortcut, which can also be customized in config.
 
 ## Installation
 - Download [MelonLoader installer](https://melonloader.co/download.html).
