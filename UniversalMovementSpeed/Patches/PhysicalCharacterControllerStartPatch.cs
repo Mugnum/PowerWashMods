@@ -21,7 +21,7 @@ public static class PhysicalCharacterControllerStartPatch
 	/// <summary>
 	/// Vanilla value for curve "m_lookDownMoveSpeed".
 	/// </summary>
-	private static readonly AnimationCurve VanillaCurve = new(new Keyframe(0f, Plugin.DefaultMinSpeed), new Keyframe(1f, 1f));
+	private static readonly AnimationCurve VanillaCurve = new(new Keyframe(0f, Plugin.VanillaMinSpeed), new Keyframe(1f, 1f));
 
 	/// <summary>
 	/// Modded value for curve "m_lookDownMoveSpeed".

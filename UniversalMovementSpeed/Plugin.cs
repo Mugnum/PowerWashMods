@@ -20,9 +20,9 @@ public class Plugin : MelonMod
 	public const string PluginName = "UniversalMovementSpeed";
 
 	/// <summary>
-	/// Default min speed curve value.
+	/// Vanilla minimum speed curve value.
 	/// </summary>
-	internal const float DefaultMinSpeed = 0.2f;
+	internal const float VanillaMinSpeed = 0.2f;
 
 	/// <summary>
 	/// Preferences category.
@@ -52,7 +52,7 @@ public class Plugin : MelonMod
 		PluginLogger.Initialize(PluginName);
 		InitConfig();
 		HarmonyInstance.PatchAll();
-		PluginLogger.Info("Plugin initizlized.");
+		PluginLogger.Info("Plugin initialized.");
 	}
 
 	/// <summary>
