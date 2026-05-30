@@ -1,5 +1,7 @@
 ## List of PowerWash Simulator mods
-- Universal movement speed.
+- **Universal movement speed**  
+    Disables movement speed reduction when looking down. The minimum speed can be customized in config.  
+    Can be toggled with `~` shortcut, which can be customized in config.
 
 ## Installation
 - Download [MelonLoader installer](https://melonloader.co/download.html).
@@ -12,8 +14,8 @@
   - Run game at least once and edit `\PowerWash Simulator\UserData\MelonPreferences.cfg` to change shortcuts and variables.
  
 ## Build instructions
-- Install MelonLoader and run game at least once.
-- Clone repository and just open the solution.
-- It should automatically detect assembly dependencies from Steam installation.
+- Install MelonLoader and run the game at least once.
+- Clone repository and simply open the solution.
+- It should automatically detect assembly dependencies for Steam installation.
 - Build "Release" version.
-- Copy `\<mod>\bin\Release\net6.0\<mod>.dll` to `PowerWash Simulator\Mods\`.
+- Copy `PowerWashMods\<mod>\bin\Release\net6.0\<mod>.dll` to `\PowerWash Simulator\Mods\`.
