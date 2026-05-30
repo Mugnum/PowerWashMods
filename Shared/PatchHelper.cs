@@ -90,7 +90,7 @@ public static class PatchHelper
 	}
 
 	/// <summary>
-	/// Finds propety accessor.
+	/// Finds property accessor.
 	/// </summary>
 	/// <param name="target"> Target type containing property. </param>
 	/// <param name="propertyName"> Property name. </param>
@@ -108,15 +108,15 @@ public static class PatchHelper
 		}
 
 		var type = target.GetType();
-		var setterName = isSetter
+		var accessorName = isSetter
 			? $"set_{propertyName}"
 			: $"get_{propertyName}";
 
-		var accessor = AccessTools.Method(type, setterName);
+		var accessor = AccessTools.Method(type, accessorName);
 
 		if (accessor == null)
 		{
-			PluginLogger.Error($"Accessor not found: {setterName}");
+			PluginLogger.Error($"Accessor not found: {accessorName}");
 		}
 
 		return accessor;
