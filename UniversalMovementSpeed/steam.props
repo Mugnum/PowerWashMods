@@ -61,11 +61,7 @@
 			<GameCoreAssembliesDir>$([MSBuild]::NormalizePath('$(GameDir)', 'MelonLoader', 'net6'))</GameCoreAssembliesDir>
 			<GameManagedDir>$([MSBuild]::NormalizePath('$(GameDir)', 'MelonLoader', 'Dependencies', 'Il2CppAssemblyGenerator', 'Cpp2IL', 'cpp2il_out'))</GameManagedDir>
 		</PropertyGroup>
-
-		<Message Importance="high" Text="Extracted SteamLibraryPath: [$(SteamLibraryPath)]" />
-		<Message Importance="high" Text="GameDir: [$(GameDir)]" />
-		<Message Importance="high" Text="GameManagedDir: [$(GameManagedDir)]" />
-
+		
 		<!-- Add references for game managed DLLs. -->
 		<ItemGroup Condition="Exists('$(GameManagedDir)')">
 			<Reference Include="PWS">
